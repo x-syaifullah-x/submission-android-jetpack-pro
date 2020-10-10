@@ -1,0 +1,167 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="id.xxx.submission.entity.DataEntity" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:minHeight="500dp"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".40" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title"
+                style="@style/detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_content"
+                style="@style/detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{data.title}"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                tools:text="content title" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/release"
+                style="@style/detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/release"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/release_content"
+                style="@style/detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{data.releaseData}"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/release"
+                tools:text="@tools:sample/date/ddmmyy" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/original_language"
+                style="@style/detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/original_language"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/release_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/original_language_content"
+                style="@style/detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{data.originalLanguage}"
+                android:textAllCaps="true"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/original_language"
+                tools:text="ID" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/user_score"
+                style="@style/detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user_score"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/original_language_content" />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/user_score_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="10"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:rating="@{Float.parseFloat(data.voteAverage)}"
+                android:stepSize="0.0"
+                app:layout_constrainedHeight="true"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_score"
+                tools:rating="5" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/genre"
+                style="@style/detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/genre"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/genre_content"
+                style="@style/detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{data.genre}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/genre"
+                tools:text="@tools:sample/lorem" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/overview"
+                style="@style/detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/overview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/genre_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/overview_content"
+                style="@style/detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{data.overview}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/overview"
+                tools:text="@tools:sample/lorem/random" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

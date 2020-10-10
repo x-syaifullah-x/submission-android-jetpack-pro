@@ -1,0 +1,20 @@
+# Menampilkan bottom navigation
+    Memastikan bottom navigation dalam keadaan tampil
+    Memastikan fragment Movies dalam keadaan tampil
+    Memastikan fragment tv dalam keadaan tampil
+    Memastikan start destination ke fragment movies
+    Memberi tindakan klik pada navigation movies dan memastikan tindakan click sesuai yang di ingin kan
+    Memberi tindakan klik pada navigation tv dan memastikan tindakan click sesuai yang di ingin kan
+
+# Menampil kan data movies
+    Memastikan fragment Movies dalam keadaan tampil
+    Memastikan recyclerview movies dalam keadaan tampil
+    Gulir recyclerview movies ke posisi data terakhir
+    Memberi tindakan random klik pada recyclerview movies
+
+# Menampil kan data tv show
+    Memberi tindakan klik pada navigation tv show agar navigation berada di tv show
+    Memastikan fragment tv show dalam keadaan tampil
+    Memastikan recyclerview tv show dalam keadaan tampil
+    Gulir recyclerview tv show ke posisi data terakhir
+    Memberi tindakan random klik pada recyclerview tv show

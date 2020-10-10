@@ -1,0 +1,216 @@
+<resources>
+    <string name="app_name">Movie Catalogue</string>
+    <string name="detail">Detail</string>
+    <string name="title">Title</string>
+    <string name="release">Release</string>
+    <string name="original_language">Original Language</string>
+    <string name="user_score">User Score</string>
+    <string name="overview">Overview</string>
+    <string name="genre">Genre</string>
+    <string name="movies">Movies</string>
+    <string name="tv_show">Tv Show</string>
+
+    <!-- START DATA MOVIE -->
+    <string-array name="alita">
+        <item>Alita: Battle Angel</item>
+        <item>2019–01–31</item>
+        <item>EN</item>
+        <item>US</item>
+        <item>7.1</item>
+        <item>Action, Adventure, Science Fiction</item>
+        <item>When Alita awakens with no memory of who she is in a future world she does not recognize, she is taken in by Ido, a compassionate doctor who realizes that somewhere in this abandoned cyborg shell is the heart and soul of a young woman with an extraordinary past.</item>
+    </string-array>
+
+    <string-array name="aquaman">
+        <item>LEGO DC Super Heroes - Aquaman: Rage Of Atlantis</item>
+        <item>2018–07–23</item>
+        <item>EN</item>
+        <item>US</item>
+        <item>6.6</item>
+        <item>Action, Animation, Family</item>
+        <item>Aquaman must battle foes in the air, on land and in the depths of the Seven Seas, along with some help from The Justice League, to save the day.</item>
+    </string-array>
+
+    <string-array name="bohemian">
+        <item>The Story of Bohemian Rhapsody</item>
+        <item>2004–12–04</item>
+        <item>EN</item>
+        <item>US</item>
+        <item>8.9</item>
+        <item>Documentary</item>
+        <item>The story behind the epic Queen single.</item>
+    </string-array>
+
+    <string-array name="cold_pursuit">
+        <item>Cold Pursuit</item>
+        <item>2019–02–07</item>
+        <item>EN</item>
+        <item>US</item>
+        <item>5.6</item>
+        <item>Action, Crime, Thriller</item>
+        <item>The quiet family life of Nels Coxman, a snowplow driver, is upended after his son\'s murder. Nels begins a vengeful hunt for Viking, the drug lord he holds responsible for the killing, eliminating Viking\'s associates one by one. As Nels draws closer to Viking, his actions bring even more unexpected and violent consequences, as he proves that revenge is all in the execution.</item>
+    </string-array>
+
+    <string-array name="creed_II">
+        <item>Creed II</item>
+        <item>2018–11–21</item>
+        <item>EN</item>
+        <item>US</item>
+        <item>6.9</item>
+        <item>Drama</item>
+        <item>Between personal obligations and training for his next big fight against an opponent with ties to his family\'s past, Adonis Creed is up against the challenge of his life.</item>
+    </string-array>
+
+    <string-array name="glass">
+        <item>Glass</item>
+        <item>2019–01–16</item>
+        <item>EN</item>
+        <item>US</item>
+        <item>6.6</item>
+        <item>Drama, Science Fiction, Thriller</item>
+        <item>In a series of escalating encounters, former security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb, a disturbed man who has twenty-four personalities. Meanwhile, the shadowy presence of Elijah Price emerges as an orchestrator who holds secrets critical to both men.</item>
+    </string-array>
+
+    <string-array name="avengers">
+        <item>Avengers: Infinity War</item>
+        <item>2018–04–25</item>
+        <item>EN</item>
+        <item>US</item>
+        <item>8.3</item>
+        <item>Action, Adventure, Science Fiction</item>
+        <item>As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.</item>
+    </string-array>
+
+    <string-array name="mortal_engines">
+        <item>Mortal Engines</item>
+        <item>2018–11–27</item>
+        <item>EN</item>
+        <item>US</item>
+        <item>6.1</item>
+        <item>Adventure, Fantasy</item>
+        <item>Many thousands of years in the future, Earth’s cities roam the globe on huge wheels, devouring each other in a struggle for ever diminishing resources. On one of these massive traction cities, the old London, Tom Natsworthy has an unexpected encounter with a mysterious young woman from the wastelands who will change the course of his life forever.</item>
+    </string-array>
+
+    <string-array name="robin_hood">
+        <item>Robin Hood</item>
+        <item>2018–11–21</item>
+        <item>EN</item>
+        <item>US</item>
+        <item>5.9</item>
+        <item>Action, Adventure, Thriller</item>
+        <item>A war-hardened Crusader and his Moorish commander mount an audacious revolt against the corrupt English crown.</item>
+    </string-array>
+
+    <string-array name="t34">
+        <item>T-34</item>
+        <item>2018–12–27</item>
+        <item>EN</item>
+        <item>US</item>
+        <item>7.0</item>
+        <item>Action, Drama, History, War</item>
+        <item>In 1944, a courageous group of Russian soldiers managed to escape from German captivity in a half-destroyed legendary T-34 tank. Those were the times of unforgettable bravery, fierce fighting, unbreakable love, and legendary miracles.</item>
+    </string-array>
+    <!--END DATA MOVIE -->
+
+    <!-- START DATA TV SHOW -->
+    <string-array name="arrow">
+        <item>Arrow</item>
+        <item>2012–10–10</item>
+        <item>EN</item>
+        <item>US</item>
+        <item>5.5</item>
+        <item>Crime, Drama, Mystery, Action &amp; Adventure</item>
+        <item>Spoiled billionaire playboy Oliver Queen is missing and presumed dead when his yacht is lost at sea. He returns five years later a changed man, determined to clean up the city as a hooded vigilante armed with a bow.</item>
+    </string-array>
+
+    <string-array name="doom_patrol">
+        <item>Doom Patrol</item>
+        <item>2019–02–15</item>
+        <item>EN</item>
+        <item>US</item>
+        <item>7.5</item>
+        <item>Sci-Fi &amp; Fantasy, Action &amp; Adventure</item>
+        <item>The Doom Patrol’s members each suffered horrible accidents that gave them superhuman abilities — but also left them scarred and disfigured. Traumatized and downtrodden, the team found purpose through The Chief, who brought them together to investigate the weirdest phenomena in existence — and to protect Earth from what they find.</item>
+    </string-array>
+
+    <string-array name="dragon_ball">
+        <item>Dragon Ball</item>
+        <item>1986–02–26</item>
+        <item>JP</item>
+        <item>JA</item>
+        <item>7.9</item>
+        <item>Comedy, Sci-Fi &amp; Fantasy, Animation, Action &amp; Adventure</item>
+        <item>Long ago in the mountains, a fighting master known as Gohan discovered a strange boy whom he named Goku. Gohan raised him and trained Goku in martial arts until he died. The young and very strong boy was on his own, but easily managed. Then one day, Goku met a teenage girl named Bulma, whose search for the mystical Dragon Balls brought her to Goku\'s home. Together, they set off to find all seven and to grant her wish.</item>
+    </string-array>
+
+    <string-array name="family_guy">
+        <item>Family Guy</item>
+        <item>1999–01–31</item>
+        <item>EN</item>
+        <item>US</item>
+        <item>6.8</item>
+        <item>Animation, Comedy</item>
+        <item>Sick, twisted, politically incorrect and Freaki\' Sweet animated series featuring the adventures of the dysfunctional Griffin family. Bumbling Peter and long-suffering Lois have three kids. Stewie (a brilliant but sadistic baby bent on killing his mother and taking over the world), Meg (the oldest, and is the most unpopular girl in town) and Chris (the middle kid, h\'s not very bright but has a passion for movies). The final member of the family is Brian - a talking dog and much more than a pet, he keeps Stewie in check whilst sipping Martinis and sorting through his own life issues.</item>
+    </string-array>
+
+    <string-array name="the_flash">
+        <item>The Flash</item>
+        <item>1999–01–31</item>
+        <item>EN</item>
+        <item>US</item>
+        <item>6.8</item>
+        <item>Drama, Sci-Fi &amp; Fantasy</item>
+        <item>Sick, twisted, politically incorrect and Freakin\' Sweet animated series featuring the adventures of the dysfunctional Griffin family. Bumbling Peter and long-suffering Lois have three kids. Stewie (a brilliant but sadistic baby bent on killing his mother and taking over the world), Meg (the oldest, and is the most unpopular girl in town) and Chris (the middle kid, he\'s not very bright but has a passion for movies). The final member of the family is Brian - a talking dog and much more than a pet, he keeps Stewie in check whilst sipping Martinis and sorting through his own life issues.</item>
+    </string-array>
+
+    <string-array name="gotham">
+        <item>Gotham</item>
+        <item>2014–09–22</item>
+        <item>EN</item>
+        <item>US</item>
+        <item>7.3</item>
+        <item>Drama, Fantasy, Crime</item>
+        <item>Everyone knows the name Commissioner Gordon. He is one of the crime world\'s greatest foes, a man whose reputation is synonymous with law and order. But what is known of Gordon\'s story and his rise from rookie detective to Police Commissioner? What did it take to navigate the multiple layers of corruption that secretly ruled Gotham City, the spawning ground of the world\'s most iconic villains? And what circumstances created them – the larger-than-life personas who would become Catwoman, The Penguin, The Riddler, Two-Face and The Joker?</item>
+    </string-array>
+
+    <string-array name="grey_s_anatomy">
+        <item>Grey\'s Anatomy</item>
+        <item>2005–03–27</item>
+        <item>EN</item>
+        <item>US</item>
+        <item>8</item>
+        <item>Drama</item>
+        <item>Follows the personal and professional lives of a group of doctors at Seattle’s Grey Sloan Memorial Hospital.</item>
+    </string-array>
+
+    <string-array name="marvel_s_iron_fist">
+        <item>Marvel\'s Iron Fist</item>
+        <item>2017–03–17</item>
+        <item>EN</item>
+        <item>US</item>
+        <item>6.4</item>
+        <item>Action &amp; Adventure, Drama, Sci-Fi &amp; Fantasy</item>
+        <item>Danny Rand resurfaces 15 years after being presumed dead. Now, with the power of the Iron Fist, he seeks to reclaim his past and fulfill his destiny.</item>
+    </string-array>
+
+    <string-array name="ncis">
+        <item>NCIS</item>
+        <item>2003–09–23</item>
+        <item>EN</item>
+        <item>US</item>
+        <item>7.1</item>
+        <item>Action &amp; Adventure, Crime, Drama</item>
+        <item>From murder and espionage to terrorism and stolen submarines, a team of special agents investigates any crime that has a shred of evidence connected to Navy and Marine Corps personnel, regardless of rank or position.</item>
+    </string-array>
+
+    <string-array name="riverdale">
+        <item>Riverdale</item>
+        <item>2017–01–26</item>
+        <item>EN</item>
+        <item>US</item>
+        <item>8.6</item>
+        <item>Drama, Mystery</item>
+        <item>Set in the present, the series offers a bold, subversive take on Archie, Betty, Veronica and their friends, exploring the surreality of small-town life, the darkness and weirdness bubbling beneath Riverdale’s wholesome facade.</item>
+    </string-array>
+    <!-- END DATA TV SHOW -->
+</resources>

@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="id.xxx.submission">
+
+    <application tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name="id.xxx.submission.SingleFragmentActivity" />
+    </application>
+
+</manifest>
