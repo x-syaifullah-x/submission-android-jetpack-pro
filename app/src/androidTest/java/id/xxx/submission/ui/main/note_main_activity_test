@@ -1,0 +1,11 @@
+# main_activity_loaded()
+    Memastikan destination sama dengan fragment movies
+    Memastikan bottom navigation dalam keadaan tampil
+    Memastikan fragment Movie dalam keadaan tampil
+    Memastikan movie_recycler_view dalam keadaan tampil
+
+# bottom_navigation_move_to_tv()
+    Memberi tindakan klik pada bottom navigation tv
+    Memastikan destination ke fragment tv
+    Memastikan fragment tv dalam keadaan tampil
+    Memastikan tv_recycler_view dalam keadaan tampil

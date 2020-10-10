@@ -1,0 +1,4 @@
+# fragment_tv_loaded()
+    Memastikan recyclerview tv show dalam keadaan tampil
+    Gulir recyclerview tv show ke posisi data terakhir
+    Memberi tindakan random klik pada recyclerview tv show
