@@ -1,0 +1,4 @@
+# fragment_loaded()
+    Memastikan recyclerview movies dalam keadaan tampil
+    Gulir recyclerview movies ke posisi data terakhir
+    Memberi tindakan random klik pada recyclerview movies

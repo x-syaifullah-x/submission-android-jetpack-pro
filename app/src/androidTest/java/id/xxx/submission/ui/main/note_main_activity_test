@@ -1,0 +1,34 @@
+# main_activity_loaded()
+    Memastikan destination sama dengan fragment movies
+    Memastikan bottom navigation dalam keadaan tampil
+    Memastikan fragment Movie dalam keadaan tampil
+    Memastikan movie_recycler_view dalam keadaan tampil
+    Memastikan menu sort dalam keadaan tampil
+    Memberi tindakan click pada menu sort
+    Memastikan menu sort by name tampil
+    Memastikan menu sort by release tampil
+    Memberi tindakan pada menu by release
+
+# bottom_navigation_move_to_tv()
+    Memberi tindakan klik pada bottom navigation tv
+    Memastikan destination ke fragment tv
+    Memastikan fragment tv dalam keadaan tampil
+    Memastikan tv_recycler_view dalam keadaan tampil
+    Memastikan menu sort dalam keadaan tampil
+    Memberi tindakan click pada menu sort
+    Memastikan menu sort by name tampil
+    Memastikan menu sort by release tampil
+    Memberi tindakan pada menu by release
+
+# bottom_navigation_move_to_favorite()
+    Memberi tindakan klik pada bottom navigation favorite
+    Memastikan destination ke fragment favorite
+    Memastikan fragment favorite dalam keadaan tampil
+    Memastikan recycler_view dalam keadaan tampil
+    Memberi tindakan kelik pada tab_favorite_tv
+    Memastikan recycler_view dalam keadaan tampil
+    Memastikan menu sort dalam keadaan tampil
+    Memberi tindakan click pada menu sort
+    Memastikan menu sort by name tampil
+    Memastikan menu sort by release tampil
+    Memberi tindakan pada menu by release
