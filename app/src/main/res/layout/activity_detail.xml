@@ -91,6 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:backgroundTint="?colorPrimary"
+                android:contentDescription="@string/btn_add"
                 app:layout_anchor="@id/app_bar"
                 app:layout_anchorGravity="bottom|end"
                 tools:srcCompat="@android:drawable/ic_menu_add" />

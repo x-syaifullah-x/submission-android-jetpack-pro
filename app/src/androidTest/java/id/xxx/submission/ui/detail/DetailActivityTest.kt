@@ -41,6 +41,14 @@ class DetailActivityTest {
             }
         )
         onView(withId(R.id.overview_content)).check(matches(isDisplayed()))
+        onView(withId(R.id.fab)).check(matches(isDisplayed()))
+
+        onView(withId(R.id.fab)).perform(click())
+        onView(withText(R.string.ok)).check(matches(withText("OK")))
+        onView(withText(R.string.cancel)).check(matches(withText("Cancel")))
+        onView(withText("Cancel")).perform(click())
+
+        onView(withId(R.id.overview_content)).check(matches(withText(dummyDataMovie.overview)))
     }
 
     @Test
@@ -51,17 +59,11 @@ class DetailActivityTest {
             }
         )
         onView(withId(R.id.overview_content)).check(matches(isDisplayed()))
-    }
-
-    @Test
-    fun set_favorite() {
-        scenario = ActivityScenario.launch(
-            Intent(ctx, DetailActivity::class.java).apply {
-                putExtra(DATA_EXTRA, arrayListOf(R.id.detail_movie, dummyDataMovie.id))
-            }
-        )
         onView(withId(R.id.fab)).check(matches(isDisplayed()))
         onView(withId(R.id.fab)).perform(click())
-        onView(withText(R.string.ok)).check(matches(isDisplayed()))
+        onView(withText(R.string.ok)).check(matches(withText("OK")))
+        onView(withText(R.string.cancel)).check(matches(withText("Cancel")))
+        onView(withText("Cancel")).perform(click())
+        onView(withId(R.id.overview_content)).check(matches(withText(dummyDataTv.overview)))
     }
 }
