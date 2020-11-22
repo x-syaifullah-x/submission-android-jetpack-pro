@@ -1,8 +1,7 @@
-package id.xxx.submission.data.source
+package id.xxx.submission.data
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
-import id.xxx.submission.data.Resource
 import id.xxx.submission.data.source.remote.network.ApiResponse
 import id.xxx.submission.utils.Executors
 

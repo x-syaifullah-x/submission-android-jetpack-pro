@@ -6,9 +6,9 @@ import androidx.lifecycle.Transformations.map
 import androidx.paging.LivePagedListBuilder
 import androidx.paging.PagedList
 import androidx.sqlite.db.SupportSQLiteQuery
+import id.xxx.submission.data.NetworkBoundResource
 import id.xxx.submission.data.model.MovieDetailModel
 import id.xxx.submission.data.model.MovieResultModel
-import id.xxx.submission.data.source.NetworkBoundResource
 import id.xxx.submission.data.source.local.LocalMovieDataSource
 import id.xxx.submission.data.source.remote.RemoteDataSource
 import id.xxx.submission.data.source.remote.network.ApiResponse
