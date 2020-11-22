@@ -1,12 +1,17 @@
 package id.xxx.submission
 
-import dagger.android.AndroidInjector
-import dagger.android.DaggerApplication
+import android.app.Application
+import id.xxx.submission.data.di.DaggerDataComponent
+import id.xxx.submission.data.di.DataComponent
+import id.xxx.submission.di.AppComponent
 import id.xxx.submission.di.DaggerAppComponent
 
-class App : DaggerApplication() {
+class App : Application() {
+    private val dataComponent: DataComponent by lazy {
+        DaggerDataComponent.factory().create(this)
+    }
 
-    override fun applicationInjector(): AndroidInjector<out DaggerApplication>? {
-        return DaggerAppComponent.builder().application(this).build()
+    val appComponent: AppComponent by lazy {
+        DaggerAppComponent.factory().create(dataComponent)
     }
 }

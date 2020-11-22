@@ -6,11 +6,11 @@ import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
 import androidx.paging.PagedList
 import androidx.recyclerview.widget.LinearLayoutManager
+import id.xxx.submission.App
 import id.xxx.submission.R
 import id.xxx.submission.base.BaseFragment
 import id.xxx.submission.base.adapter.ItemClicked
@@ -19,14 +19,15 @@ import id.xxx.submission.data.model.MovieResultModel
 import id.xxx.submission.databinding.FragmentMovieBinding
 import id.xxx.submission.ui.detail.DetailActivity
 import id.xxx.submission.ui.main.MainViewModel
+import id.xxx.submission.viewmodel.ViewModelFactory
 import javax.inject.Inject
 
 class MovieFragment : BaseFragment<FragmentMovieBinding>(), ItemClicked<MovieResultModel> {
 
     @Inject
-    internal lateinit var viewModelFactory: ViewModelProvider.Factory
+    internal lateinit var factory: ViewModelFactory
 
-    private val viewModel by navGraphViewModels<MainViewModel>(R.id.nav_graph_main) { viewModelFactory }
+    private val viewModel by navGraphViewModels<MainViewModel>(R.id.nav_graph_main) { factory }
 
     private lateinit var adapterMovie: AdapterMovie
 
@@ -34,6 +35,8 @@ class MovieFragment : BaseFragment<FragmentMovieBinding>(), ItemClicked<MovieRes
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+
+        (requireActivity().application as App).appComponent.inject(this)
 
         adapterMovie = AdapterMovie().apply {
             onItemClicked = this@MovieFragment

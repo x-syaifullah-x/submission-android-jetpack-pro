@@ -3,12 +3,13 @@ package id.xxx.submission.ui.detail
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.core.os.bundleOf
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import id.xxx.submission.App
 import id.xxx.submission.R
 import id.xxx.submission.base.BaseActivity
 import id.xxx.submission.databinding.ActivityDetailBinding
+import id.xxx.submission.viewmodel.ViewModelFactory
 import kotlinx.android.synthetic.main.activity_detail.*
 import javax.inject.Inject
 
@@ -22,15 +23,16 @@ class DetailActivity : BaseActivity<ActivityDetailBinding>() {
     }
 
     @Inject
-    internal lateinit var viewModelFactory: ViewModelProvider.Factory
+    internal lateinit var factory: ViewModelFactory
 
     private lateinit var navController: NavController
 
-    val viewModel by viewModels<DetailViewModel> { viewModelFactory }
+    val viewModel by viewModels<DetailViewModel> { factory }
 
     override val layoutActivity: Int = R.layout.activity_detail
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        (application as App).appComponent.inject(this)
         super.onCreate(savedInstanceState)
 
         setSupportActionBar(binding.toolbar)

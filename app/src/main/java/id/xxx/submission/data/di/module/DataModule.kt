@@ -1,4 +1,4 @@
-package id.xxx.submission.data
+package id.xxx.submission.data.di.module
 
 import android.app.Application
 import dagger.Module

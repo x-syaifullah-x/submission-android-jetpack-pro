@@ -13,7 +13,8 @@ import id.xxx.submission.data.source.local.dao.TvDao
 import javax.inject.Inject
 
 class MainViewModel @Inject constructor(
-    private val movieRepo: MovieRepository, private val tvRepo: TvRepository
+    private val movieRepo: MovieRepository,
+    private val tvRepo: TvRepository
 ) : ViewModel() {
 
     val movie = MediatorLiveData<Resource<PagedList<MovieResultModel>>>()

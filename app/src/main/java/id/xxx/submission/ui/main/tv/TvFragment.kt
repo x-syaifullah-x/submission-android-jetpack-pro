@@ -1,15 +1,16 @@
 package id.xxx.submission.ui.main.tv
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
 import androidx.paging.PagedList
 import androidx.recyclerview.widget.LinearLayoutManager
+import id.xxx.submission.App
 import id.xxx.submission.R
 import id.xxx.submission.base.BaseFragment
 import id.xxx.submission.base.adapter.ItemClicked
@@ -18,17 +19,23 @@ import id.xxx.submission.data.model.TvResultModel
 import id.xxx.submission.databinding.FragmentTvBinding
 import id.xxx.submission.ui.detail.DetailActivity
 import id.xxx.submission.ui.main.MainViewModel
+import id.xxx.submission.viewmodel.ViewModelFactory
 import javax.inject.Inject
 
 class TvFragment : BaseFragment<FragmentTvBinding>(), ItemClicked<TvResultModel> {
 
     @Inject
-    internal lateinit var viewModelFactory: ViewModelProvider.Factory
+    internal lateinit var factory: ViewModelFactory
 
     private lateinit var adapterTv: AdapterTv
-    private val viewModel by navGraphViewModels<MainViewModel>(R.id.nav_graph_main) { viewModelFactory }
+    private val viewModel by navGraphViewModels<MainViewModel>(R.id.nav_graph_main) { factory }
 
     override val layoutFragment: Int = R.layout.fragment_tv
+
+    override fun onAttach(context: Context) {
+        (requireActivity().application as App).appComponent.inject(this)
+        super.onAttach(context)
+    }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
