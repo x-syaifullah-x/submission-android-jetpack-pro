@@ -12,7 +12,8 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme.Splash" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@drawable/ic_splash_activity</item>
         <item name="android:windowFullscreen">true</item>
     </style>
 
