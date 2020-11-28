@@ -22,8 +22,9 @@ abstract class BaseAdapter<Entity : Parcelable, ItemBinding : ViewDataBinding>(
         return Holder(LayoutInflater.from(parent.context).inflate(itemLayout, parent, false))
     }
 
-    inner class Holder<ItemBinding : ViewDataBinding>(itemView: View) :
-        RecyclerView.ViewHolder(itemView) {
+    inner class Holder<ItemBinding : ViewDataBinding>(
+        itemView: View
+    ) : RecyclerView.ViewHolder(itemView) {
         var binding = DataBindingUtil.bind<ItemBinding>(itemView)
     }
 }
