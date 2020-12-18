@@ -24,6 +24,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
                     android:fitsSystemWindows="true"
+                    app:title="eee"
                     app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
                     <androidx.appcompat.widget.AppCompatImageView
