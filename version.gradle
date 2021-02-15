@@ -17,3 +17,14 @@ deps.gradle = "com.android.tools.build:gradle:$version.gradle"
 deps.kotlin_gradle_plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version.kotlin_version"
 deps.kotlin_stdlib = "org.jetbrains.kotlin:kotlin-stdlib:$version.kotlin_version"
 ext.deps = deps
+
+static def addRepos(RepositoryHandler handler) {
+    handler.google()
+    handler.jcenter()
+    handler.maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots'
+        url 'https://jitpack.io'
+    }
+}
+
+ext.addRepos = this.&addRepos

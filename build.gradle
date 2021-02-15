@@ -2,10 +2,13 @@ buildscript {
 
     apply from: "version.gradle"
 
+    addRepos(repositories)
+
     repositories {
         google()
         jcenter()
     }
+
     dependencies {
         classpath deps.gradle
         classpath deps.kotlin_gradle_plugin
@@ -21,6 +24,10 @@ allprojects {
     tasks.withType(JavaCompile) {
         options.compilerArgs << "-Xlint:deprecation" << "-Xlint:unchecked"
     }
+}
+
+allprojects {
+    addRepos(repositories)
 }
 
 task clean(type: Delete) {
