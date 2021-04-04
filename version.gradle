@@ -11,7 +11,7 @@ ext.deps = [:]
 
 def version = [:]
 version.gradle = "4.1.2"
-version.kotlin_version = "1.4.31"
+version.kotlin_version = "1.4.32"
 
 deps.gradle = "com.android.tools.build:gradle:$version.gradle"
 deps.kotlin_gradle_plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version.kotlin_version"
